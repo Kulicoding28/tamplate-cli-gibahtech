@@ -14,12 +14,8 @@
     "type": "git",
     "url": "git+https://github.com/leoroese/template-cli.git"
   },
-  "author": "Leonardo Roese",
+  "author": "Ahmad Aziz",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/leoroese/template-cli/issues"
-  },
-  "homepage": "https://github.com/leoroese/template-cli#readme",
   "dependencies": {
     "inquirer": "^8.0.0"
   },
