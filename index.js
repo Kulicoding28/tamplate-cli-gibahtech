@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 
-import chalk from "chalk";
 import gradient from "gradient-string";
-import chalkAnimation from "chalk-animation";
 import figlet from "figlet";
 import { createSpinner } from "nanospinner";
 import inquirer from "inquirer";
@@ -15,9 +13,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const CHOICES = fs.readdirSync(`${__dirname}/templates`);
 
-function winner() {
+function End() {
   console.clear();
-  figlet(`Congrats \n $ 1 , 0 0 0 , 0 0 0`, (err, data) => {
+  figlet(`Thank you form \n Gibahtech`, (err, data) => {
     console.log(gradient.pastel.multiline(data) + "\n");
   });
 }
@@ -54,4 +52,5 @@ inquirer.prompt(QUESTIONS).then((answers) => {
 
   fs.mkdirSync(`${CURR_DIR}/${projectName}`);
   createDirectoryContents(templatePath, projectName);
+  End();
 });
