@@ -15,7 +15,7 @@ const CHOICES = fs.readdirSync(`${__dirname}/templates`);
 
 function End() {
   console.clear();
-  figlet(`Thank you form \n Gibahtech`, (err, data) => {
+  figlet(`Thank you from \n Gibahtech`, (err, data) => {
     console.log(gradient.pastel.multiline(data) + "\n");
   });
 }
