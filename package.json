@@ -1,6 +1,6 @@
 {
   "name": "gibahtech",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "Project for instantiating projects via cli",
   "main": "index.js",
   "type": "module",
