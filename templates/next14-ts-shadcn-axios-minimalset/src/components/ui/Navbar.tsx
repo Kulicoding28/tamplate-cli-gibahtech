@@ -3,6 +3,7 @@
 import Link from "next/link";
 import React from "react";
 import { ModeToggle } from "./DarkModeToggle";
+import { Button } from "./button";
 
 const Navbar = () => {
   return (
@@ -14,8 +15,9 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="flex gap-10">
+        <div className="flex gap-4">
           <ModeToggle />
+          <Button>Login</Button>
         </div>
       </ul>
     </div>
