@@ -4,10 +4,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 interface Iprops {
-  children:React.ReactNode
+  children: React.ReactNode;
 }
 
-const TanstackProvider = ({ children }:Iprops) => {
+const TanstackProvider = ({ children }: Iprops) => {
   const queryClient = new QueryClient();
 
   return (
