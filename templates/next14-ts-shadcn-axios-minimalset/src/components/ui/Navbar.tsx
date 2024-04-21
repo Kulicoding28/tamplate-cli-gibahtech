@@ -7,20 +7,17 @@ import { Button } from "./button";
 
 const Navbar = () => {
   return (
-    <div>
+    <nav>
       <ul className="flex justify-between my-10 items-center">
-        <div>
-          <Link href="/">
-            <li className="font-bold text-lg">Home</li>
-          </Link>
-        </div>
-
+        <Link href="/">
+          <p className="font-bold text-lg">Home</p>
+        </Link>
         <div className="flex gap-4">
           <ModeToggle />
           <Button>Login</Button>
         </div>
       </ul>
-    </div>
+    </nav>
   );
 };
 
